@@ -1,6 +1,6 @@
 # Create EC2 Instance - Amazon2 Linux
 resource "aws_instance" "my-ec2-vm" {
-  ami                    = "ami-053b0d53c279acc90"
+  ami                    = "ami-0f5ee92e2d63afc18"
   instance_type          = var.instance_type
   count                  = 2
   key_name               = "aws"
