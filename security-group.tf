@@ -3,7 +3,7 @@ resource "aws_security_group" "TechVPC_SG" {
   description = "Security Group for Web"
 
   dynamic "ingress" {
-    for_each = [22,80,443,3306]
+    for_each = [22,80]
     iterator = port
     content {
       description = "SG for VPC"
